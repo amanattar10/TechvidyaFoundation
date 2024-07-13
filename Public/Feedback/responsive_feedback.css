@@ -1,32 +1,41 @@
 @media screen and (max-width: 450px) {
+    /* navbar */
     header {
-        /* min-width: none; */
-        min-width: 750px;
-    }
-    header > div {
-        font-size: 0.8rem;
-        gap: 1.1rem;
+        width: 100%;
+        padding: 2rem 5rem;
+        position: relative;
+        background-color: rgb(172, 208, 172);
     }
     nav {
         display: none;
-        height: 100%;
-        width: 50%;
-        position: fixed;
-        right: 0px;
-        background-color:  rgba(0, 0, 0, 0.827);
-        z-index: 1000;
-        margin-top: 5.8rem;
+        height: 85vh;
+        width: 70%;
+        position: absolute;
+        left: 0%;
+        /* background-color:  rgba(0, 0, 0, 0.827); */
+        /* background-color: wheat; */
+        background-color: rgb(172, 208, 172);
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        margin-top: 6.5rem;
+        gap: 2rem;
     }
     nav ul {
+        background-color: rgb(172, 208, 172);
         list-style: none;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        align-content: center;
         gap: 5rem;
+        height: 85vh;
     }
     nav ul li {
-        padding-right: 5rem;
+        padding: 0px;
+        /* padding-right: 5rem; */
+        gap: 2rem;
     }
     header svg {
         display: block;
@@ -34,10 +43,14 @@
         font-weight: bold;
     }
     header nav a {
-        font-size: 2.1rem;
+        font-size: 1.5rem;
     }
     header nav a:hover{
         color: green;
+        cursor: pointer;
+    }
+    #menu {
+        display: initial;
         cursor: pointer;
     }
 
@@ -79,98 +92,37 @@
     }
 
     /* feedback form */
-
-    #feedback_form_module {
-        min-width: 750px;
-        margin: auto;
-        background-color: antiquewhite;
-        position: relative;
-        top: 10%;
-        padding: 2rem;
-    }
-    #feedbackForm {
-        display: flex;
-        flex-direction: column;
-        gap: 1.4rem;
-        justify-content: center;
-        align-items: center;
-    }
-    textarea {
-        width: 35%;
-        background: rgb(235, 235, 223);
-    }
-    .input-box{
-        width: 35%;
-    }
-    .title{
-        font-size: 1.8rem;
-        font-weight: 700;
-    }
-    .input-box input{
-        height: 45px;
+    form {
         width: 100%;
-        border: 1px solid #bfbfbf;
-        font-size: 16px;
-        padding-left: 1.2rem;
-        background-color: rgb(235, 235, 223);
     }
-    form button{
-    height: 100%;
-    width: 20%;
-    color: rgb(235, 235, 223);
-    border: none;
-    font-size: 1.1rem;
-    font-weight: 500;
-    padding: 0.7rem;
-    background-color: black;
+    .input-box {
+        width: 80%;
+    }
+    .user-details {
+        width: 100%;
+    }
+    textarea{ 
+        width: 80%;
+    }
+    .form-button {
+        height: 100%;
+        width: 90%;
+        color: rgb(235, 235, 223);
+        border: none;
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding: 0.7rem;
+        background-color: black;
     } 
+    form button {
+        width: 50%;
+    }
     form button:hover{
         background-color: rgb(235, 235, 223);
         color: black;
     }
 
     footer {
-        background-color: black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 3rem 0rem;
-        gap: 2rem;
-        min-width: 750px;
-    }
-    .footer_logo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer_img {
-        width: 7rem;
-    }
-    .socials a {
-        width: 4rem;
-        height: 4rem;
-        border-radius: 50%; 
-        background-color: antiquewhite;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 24px;
-        font-family: Arial, sans-serif;
-    }
-    .socials {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        gap: 1.2rem;
-    }
-    .copyright{
-        color: antiquewhite;
-    }
-    .copyright p {
-        font-size: 0.9rem;
-        font-weight: 400;
+        width: 100vw;
     }
 }

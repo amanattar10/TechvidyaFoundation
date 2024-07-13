@@ -15,9 +15,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.6rem;
-    /* background-color: antiquewhite; */
-    background-color: rgb(172, 208, 172);
-    position: sticky;
+    background-color: antiquewhite;
+    position: relative;
     z-index: 10;
 }
 header > div {
@@ -38,13 +37,20 @@ nav {
     align-items: center;
     list-style: none;
 }
-nav li {
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li {
     padding-right: 5rem;
 }
 header svg {
     display: none;
 }
 header nav a {
+    /* padding: 10px 60px; */
     font-size: 1rem;
     text-decoration: none;
     color: orangered;

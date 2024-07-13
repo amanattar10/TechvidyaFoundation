@@ -4,7 +4,9 @@
     padding: 0px;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
 /* navbar */
 header {
     min-width: 100%;

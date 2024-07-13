@@ -33,7 +33,7 @@
         height: 85vh;
     }
     nav ul li {
-        /* padding-right: 5rem; */
+        padding: 0px;
         gap: 2rem;
     }
     header svg {

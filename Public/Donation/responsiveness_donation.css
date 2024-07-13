@@ -1,9 +1,10 @@
 @media screen and (max-width: 450px) {
+
     /* navbar */
     header {
         width: 100%;
-        padding: 2rem 1rem;
-        position: relative;
+        padding: 2rem 5rem;
+        position: absolute;
         background-color: rgb(172, 208, 172);
     }
     nav {
@@ -52,21 +53,35 @@
         display: initial;
         cursor: pointer;
     }
-    .container {
-        width: 100%;
-        position: absolute;
-        border-radius: 0;
-    }
-    .row{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+    .Main {
         flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    #feedback_form_module {
+        padding: 1rem;
+    }
+ ;
+    textarea,
+    .input-box,
+    form button {
+        width: 90%;
+        max-width: 350px; /* Adjust maximum width for smaller screens */
+    }
+
+    .input-box input {
+        font-size: 14px;
+        padding-left: 1rem;
+    }
+
+    form button {
+        width: 90%;
+        font-size: 1rem;
     }
 
     footer {
-        /* position: absolute;
-        bottom: 0; */
         width: 100vw;
     }
 }
