@@ -1,0 +1,72 @@
+@media screen and (max-width: 450px) {
+    /* navbar */
+    header {
+        width: 100%;
+        padding: 2rem 1rem;
+        position: relative;
+        background-color: rgb(172, 208, 172);
+    }
+    nav {
+        display: none;
+        height: 85vh;
+        width: 70%;
+        position: absolute;
+        left: 0%;
+        /* background-color:  rgba(0, 0, 0, 0.827); */
+        /* background-color: wheat; */
+        background-color: rgb(172, 208, 172);
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        margin-top: 6.5rem;
+        gap: 2rem;
+    }
+    nav ul {
+        background-color: rgb(172, 208, 172);
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 5rem;
+        height: 85vh;
+    }
+    nav ul li {
+        /* padding-right: 5rem; */
+        gap: 2rem;
+    }
+    header svg {
+        display: block;
+        color: orangered;
+        font-weight: bold;
+    }
+    header nav a {
+        font-size: 1.5rem;
+    }
+    header nav a:hover{
+        color: green;
+        cursor: pointer;
+    }
+    #menu {
+        display: initial;
+        cursor: pointer;
+    }
+    .container {
+        width: 100%;
+        position: absolute;
+        border-radius: 0;
+    }
+    .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    footer {
+        /* position: absolute;
+        bottom: 0; */
+        width: 100vw;
+    }
+}
